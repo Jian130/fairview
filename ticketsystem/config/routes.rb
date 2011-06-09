@@ -1,5 +1,11 @@
 Ticketsystem::Application.routes.draw do
-  get "users/new"
+  get "user/name"
+
+  get "user/email"
+  
+  get "user/new"
+  
+  get "user/edit"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
