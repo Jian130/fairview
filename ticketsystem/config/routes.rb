@@ -1,11 +1,9 @@
 Ticketsystem::Application.routes.draw do
-  get "user/name"
-
-  get "user/email"
   
-  get "user/new"
-  
-  get "user/edit"
+  #match '/', :to => 'pages#home'
+  match '/home', :to => 'pages#home'
+  match '/help', :to => 'pages#help'
+  match '/signin'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -56,7 +54,7 @@ Ticketsystem::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "pages#home"
 
   # See how all your routes lay out with "rake routes"
 
