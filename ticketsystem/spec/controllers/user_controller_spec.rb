@@ -26,7 +26,7 @@ describe UserController do
     it "should have the right title" do
       get 'new'
       response.should have_selector("title",
-                        :content => "Ticketsystem")
+                        :content => "Sign up")
     end
   end
 
@@ -42,5 +42,7 @@ describe UserController do
                         :content => "Ticketsystem")
     end
   end
+  
+  
   
 end
